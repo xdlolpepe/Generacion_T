@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Tabla-2</title>
+</head>
+<style>
+
+     table {
+      border-collapse: collapse;
+      width: 50%;
+
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+</style>
+<body>
+    <!-- Esto es la tabla-->
+    <table>
+        <tr>
+            <td>Instrumento</td>
+            <td>Fecha de salida</td>
+            <td>Precio</td>
+        </tr>
+        <tr>
+            <td>Guitarra Electrica</td>
+            <td>5/18</td>
+            <td>$400</td>
+        </tr>
+        <tr>
+            <td>Xaxofon</td>
+            <td>6/10</td>
+            <td>$550</td>
+        </tr>
+        <tr>
+            <td>Organo Electrico</td>
+            <td>2/19</td>
+            <td>$350</td>
+        </tr>
+    </table>
+
+<hr>
+
+    <div class="container">
+        <form action="/enviar" method="POST">
+  <h1>Contacto</h1>
+
+  <form action="/enviar" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="estadoCivil">Estado civil:</label>
+    <select id="estadoCivil" name="estadoCivil">
+      <option value="soltero">Soltero/a</option>
+      <option value="casado">Casado/a</option>
+      <option value="otro">Otro</option>
+    </select><br><br>
+
+    <label for="newsletter">Desea recibir el Newsletter:</label>
+    <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+    <input type="reset" value="Limpiar datos">
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
